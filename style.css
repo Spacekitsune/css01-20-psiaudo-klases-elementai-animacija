@@ -1,0 +1,109 @@
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: salmon;
+}
+
+div {
+    height: 200px;
+    width: 200px;
+    background-color: salmon;
+}
+
+.text1::before {
+    content: "Tekstas prieš ";
+    color: salmon;
+}
+
+.text2::after {
+    content: " Tekstas po";
+    color: salmon;
+}
+
+.pic1::before {
+    content: url("https://assets.codepen.io/1533238/icon-supervisor.svg");
+}
+
+.pic2::after {
+    content: url("https://assets.codepen.io/1533238/icon-supervisor.svg");
+}
+
+.div1::before {
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 10px;
+    background-color: salmon;
+}
+
+.div2::after {
+    content: "";
+    display: inline-block;
+    width: 200px;
+    height: 10px;
+    background-color: salmon;
+}
+
+/* pakeičia text highlight spalvą */
+.selection::selection {    
+    background-color: salmon;
+}
+
+.firstletter::first-letter {
+    font-size: 25pt;
+    color: salmon;
+}
+
+.line::first-line {
+    font-weight: bold;
+    background-color: salmon;
+}
+
+/* kas antras elementas pradedant nuo pirmo arba (odd) */
+.child1 li:nth-child(2n+1) {
+    background-color: salmon;
+}
+
+.child2 li:nth-child(even) {
+    background-color: salmon;
+}
+
+.child3 li:nth-child(3) {
+    text-decoration: underline;
+}
+
+.child3 li:nth-child(4) {
+    color: salmon;
+}
+
+.child3 li:nth-child(5) {
+    background-color: salmon;
+}
+
+.child4 li:first-child {
+   color: salmon;
+}
+
+.child5 li:last-child {
+    color: salmon;
+}
+
+.div1:hover {
+    background-color: steelblue;
+}
+
+.div2 {
+    transition: width 1.5s;
+}
+
+.div2:hover {
+    width: 100%;
+}
+
+.div3:hover {
+    position: relative;
+    left: 100px;
+}
