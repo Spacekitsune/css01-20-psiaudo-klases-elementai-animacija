@@ -91,15 +91,15 @@ div {
     color: salmon;
 }
 
-.div1:hover {
+.div1a:hover {
     background-color: steelblue;
 }
 
-.div2 {
+.div2a {
     transition: width 1.5s;
 }
 
-.div2:hover {
+.div2a:hover {
     width: 100%;
 }
 
